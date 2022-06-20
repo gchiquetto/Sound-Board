@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="script.js" defer></script>
     <title>Sound board</title>
 </head>
 <body>
     <div class="main">
         <h1 class="heading-1">Play a sound</h1>
-        <div class="sound-container">
-            <audio src="sound/bear.mp3"></audio>
-            <h2 class="heading-2">Bear</h2>
-        </div>
-        <div class="sound-container">
-            <audio src="sound/cat.mp3"></audio>
-            <h2 class="heading-2">Bear</h2>
-        </div>
-        <div class="sound-container">
-            <audio src="sound/elephant.mp3"></audio>
-            <h2 class="heading-2">Elephant</h2>
-        </div>
-        <div class="sound-container">
-            <audio src="sound/dinosaur.mp3"></audio>
-            <h2 class="heading-2">Dinosaur</h2>
-        </div>
-        <div class="sound-container">
-            <audio src="sound/pig.mp3"></audio>
-            <h2 class="heading-2">Pig</h2>
-        </div>        
-    </div>
+        <audio id='bear' src="sound/bear.mp3"></audio>
+        <audio id='cat' src="sound/cat.mp3"></audio>
+        <audio id='dinosaur' src="sound/dinosaur.mp3"></audio>
+        <audio id='elephant' src="sound/elephant.mp3"></audio>
+        <audio id='pig' src="sound/pig.mp3"></audio>
+        <div class="sound-container"></div>
+        <!---<div class="sound-container">
+            <button id="bear" class="sound-button">Bear</button>
+            <button id="cat" class="sound-button">Cat</button>
+            <button id="elephant" class="sound-button">Elephant</button>
+            <button id="dinosaur" class="sound-button">Dinosaur</button>
+            <button id="pig" class="sound-button">Pig</button>   -->
+        </div>  
+    </div>    
 </body>
 </html>

@@ -10,15 +10,40 @@ html {
   box-sizing: border-box; }
 
 .main {
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  grid-template-columns: repeat(5, 1fr);
-  justify-content: center;
-  height: 100vh; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 5rem;
+  background-color: #FFF8F0; }
 
 .heading-1 {
   grid-row: 1/2;
-  grid-column: 1/-1; }
+  color: #392F5A;
+  font-family: 'Anton', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 3px; }
+
+.heading-2 {
+  text-align: center; }
 
 .sound-container {
-  grid-row: 2/-1; }
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+
+.sound-button {
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(244, 208, 111, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all .2s;
+  width: 15%;
+  padding: 3rem 1rem;
+  color: #ff5811;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase; }
+  .sound-button:active {
+    transform: translateY(4px); }
