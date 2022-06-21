@@ -6,11 +6,13 @@ sounds.forEach(sound => {
     btn.classList.add('sound-button');
 
     btn.innerText = sound;
-    document.querySelector('.sound-container').appendChild(btn);
+    
     btn.addEventListener('click', ()=> {
         stopSound();
         document.getElementById(sound).play();
     });
+
+    document.querySelector('.sound-container').appendChild(btn);
 });
 
 function stopSound(){
